@@ -1,0 +1,5 @@
+import MovieStore from 0x05
+
+pub fun main(): [MovieStore.Movie] {
+    return MovieStore.movies
+}

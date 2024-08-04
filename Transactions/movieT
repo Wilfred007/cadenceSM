@@ -1,0 +1,12 @@
+import MovieStore from 0x05 // Update with the actual address where MovieStore is deployed
+
+transaction(title: String, director: String, yearReleased: Int) {
+
+    prepare(signer: AuthAccount) {
+        // No preparation needed for this transaction
+    }
+
+    execute {
+        MovieStore.addMovie(title: title, director: director, yearReleased: yearReleased)
+    }
+}
